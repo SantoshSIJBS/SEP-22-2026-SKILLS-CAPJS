@@ -108,10 +108,6 @@ module.exports = cds.service.impl(async function(){
                 }
             }).where(ID)
 
-
-            // Step-4 : Read the purchase order service
-            const podata = transaction.read(POSrv).where(ID);
-
             // Step - 5 : Return the data
             return podata;
         } catch (error) {
